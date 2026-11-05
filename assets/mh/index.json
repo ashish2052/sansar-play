@@ -1,0 +1,415 @@
+{
+ "v": 1,
+ "skel": [
+  "Root",
+  "Body",
+  "Hips",
+  "Abdomen",
+  "Torso",
+  "Chest",
+  "Neck",
+  "Head",
+  "Shoulder.L",
+  "UpperArm.L",
+  "LowerArm.L",
+  "Wrist.L",
+  "Index1.L",
+  "Index2.L",
+  "Index3.L",
+  "Index4.L",
+  "Middle1.L",
+  "Middle2.L",
+  "Middle3.L",
+  "Middle4.L",
+  "Ring1.L",
+  "Ring2.L",
+  "Ring3.L",
+  "Ring4.L",
+  "Pinky1.L",
+  "Pinky2.L",
+  "Pinky3.L",
+  "Pinky4.L",
+  "Thumb1.L",
+  "Thumb2.L",
+  "Thumb3.L",
+  "Shoulder.R",
+  "UpperArm.R",
+  "LowerArm.R",
+  "Wrist.R",
+  "Index1.R",
+  "Index2.R",
+  "Index3.R",
+  "Index4.R",
+  "Middle1.R",
+  "Middle2.R",
+  "Middle3.R",
+  "Middle4.R",
+  "Ring1.R",
+  "Ring2.R",
+  "Ring3.R",
+  "Ring4.R",
+  "Pinky1.R",
+  "Pinky2.R",
+  "Pinky3.R",
+  "Pinky4.R",
+  "Thumb1.R",
+  "Thumb2.R",
+  "Thumb3.R",
+  "UpperLeg.L",
+  "LowerLeg.L",
+  "UpperLeg.R",
+  "LowerLeg.R",
+  "Foot.L",
+  "PT.L",
+  "Foot.R",
+  "PT.R"
+ ],
+ "eyes": [
+  "brown",
+  "brownlight",
+  "green",
+  "blue",
+  "grey",
+  "deepblue"
+ ],
+ "eye": "eyes.bin",
+ "eyeLo": "eyes_lo.bin",
+ "skinRect": [
+  [
+   0.000732421875,
+   0.500732421875,
+   0.499267578125,
+   0.999267578125
+  ],
+  [
+   0.500732421875,
+   0.500732421875,
+   0.999267578125,
+   0.999267578125
+  ],
+  [
+   0.000732421875,
+   0.000732421875,
+   0.499267578125,
+   0.499267578125
+  ],
+  [
+   0.500732421875,
+   0.000732421875,
+   0.999267578125,
+   0.499267578125
+  ]
+ ],
+ "deltas": [
+  "eth_ea",
+  "eth_af",
+  "eth_eu",
+  "old",
+  "teen",
+  "child",
+  "slim",
+  "broad",
+  "face1",
+  "face2",
+  "face3",
+  "face4",
+  "long"
+ ],
+ "f": {
+  "hair": [
+   {
+    "label": "Long",
+    "file": "hc_f_long.bin",
+    "lo": "hc_f_long_lo.bin"
+   },
+   {
+    "label": "Centre part",
+    "file": "hc_f_centre.bin",
+    "lo": "hc_f_centre_lo.bin"
+   },
+   {
+    "label": "Waves",
+    "file": "hc_f_wavy.bin",
+    "lo": "hc_f_wavy_lo.bin"
+   },
+   {
+    "label": "Ponytail",
+    "file": "hc_f_pony.bin",
+    "lo": "hc_f_pony_lo.bin"
+   },
+   {
+    "label": "Bun",
+    "file": "hc_f_bun.bin",
+    "lo": "hc_f_bun_lo.bin"
+   },
+   {
+    "label": "Bob",
+    "file": "hc_f_bob.bin",
+    "lo": "hc_f_bob_lo.bin"
+   },
+   {
+    "label": "Curls",
+    "file": "hc_f_curls.bin",
+    "lo": "hc_f_curls_lo.bin"
+   },
+   {
+    "label": "Bald",
+    "file": null
+   }
+  ],
+  "top": [
+   {
+    "label": "T-shirt",
+    "file": "female_casualsuit01_top.bin",
+    "lo": "female_casualsuit01_top_lo.bin",
+    "src": "female_casualsuit01"
+   },
+   {
+    "label": "Blouse",
+    "file": "female_elegantsuit01_top.bin",
+    "lo": "female_elegantsuit01_top_lo.bin",
+    "src": "female_elegantsuit01"
+   },
+   {
+    "label": "Logo tee",
+    "file": "female_casualsuit02_top.bin",
+    "lo": "female_casualsuit02_top_lo.bin",
+    "src": "female_casualsuit02"
+   },
+   {
+    "label": "Jacket",
+    "file": "male_casualsuit05_top.bin",
+    "lo": "male_casualsuit05_top_lo.bin",
+    "src": "male_casualsuit05"
+   },
+   {
+    "label": "Striped shirt",
+    "file": "male_casualsuit03_top.bin",
+    "lo": "male_casualsuit03_top_lo.bin",
+    "src": "male_casualsuit03"
+   },
+   {
+    "label": "Long sleeve",
+    "file": "male_casualsuit02_top.bin",
+    "lo": "male_casualsuit02_top_lo.bin",
+    "src": "male_casualsuit02"
+   }
+  ],
+  "bot": [
+   {
+    "label": "Jeans",
+    "file": "female_casualsuit01_bot.bin",
+    "lo": "female_casualsuit01_bot_lo.bin",
+    "src": "female_casualsuit01"
+   },
+   {
+    "label": "Skirt",
+    "file": "female_elegantsuit01_bot.bin",
+    "lo": "female_elegantsuit01_bot_lo.bin",
+    "src": "female_elegantsuit01"
+   },
+   {
+    "label": "Track pants",
+    "file": "female_sportsuit01_bot.bin",
+    "lo": "female_sportsuit01_bot_lo.bin",
+    "src": "female_sportsuit01"
+   },
+   {
+    "label": "Denim shorts",
+    "file": "female_casualsuit02_bot.bin",
+    "lo": "female_casualsuit02_bot_lo.bin",
+    "src": "female_casualsuit02"
+   }
+  ],
+  "shoe": [
+   {
+    "label": "Brown leather",
+    "file": "shoes01.bin",
+    "lo": "shoes01_lo.bin"
+   },
+   {
+    "label": "White sneakers",
+    "file": "shoes05.bin",
+    "lo": "shoes05_lo.bin"
+   },
+   {
+    "label": "Blue sneakers",
+    "file": "shoes06.bin",
+    "lo": "shoes06_lo.bin"
+   },
+   {
+    "label": "Black formal",
+    "file": "shoes04.bin",
+    "lo": "shoes04_lo.bin"
+   },
+   {
+    "label": "Boots",
+    "file": "shoes03.bin",
+    "lo": "shoes03_lo.bin"
+   },
+   {
+    "label": "Worn sneakers",
+    "file": "shoes02.bin",
+    "lo": "shoes02_lo.bin"
+   }
+  ],
+  "brow": "brow_f.bin",
+  "lash": "lash_f.bin",
+  "core": "core_f.bin",
+  "body": "body_f.bin",
+  "lod": "lod_f.bin",
+  "skin": "skin_f"
+ },
+ "m": {
+  "hair": [
+   {
+    "label": "Short",
+    "file": "hc_m_short.bin",
+    "lo": "hc_m_short_lo.bin"
+   },
+   {
+    "label": "Side part",
+    "file": "hc_m_sidepart.bin",
+    "lo": "hc_m_sidepart_lo.bin"
+   },
+   {
+    "label": "Swept back",
+    "file": "hc_m_swept.bin",
+    "lo": "hc_m_swept_lo.bin"
+   },
+   {
+    "label": "Crop",
+    "file": "hc_m_crop.bin",
+    "lo": "hc_m_crop_lo.bin"
+   },
+   {
+    "label": "Buzz",
+    "file": "hc_m_buzz.bin",
+    "lo": "hc_m_buzz_lo.bin"
+   },
+   {
+    "label": "Coils",
+    "file": "hc_m_coils.bin",
+    "lo": "hc_m_coils_lo.bin"
+   },
+   {
+    "label": "Bald",
+    "file": null
+   }
+  ],
+  "top": [
+   {
+    "label": "T-shirt",
+    "file": "male_casualsuit04_top.bin",
+    "lo": "male_casualsuit04_top_lo.bin",
+    "src": "male_casualsuit04"
+   },
+   {
+    "label": "Denim shirt",
+    "file": "male_casualsuit01_top.bin",
+    "lo": "male_casualsuit01_top_lo.bin",
+    "src": "male_casualsuit01"
+   },
+   {
+    "label": "Striped shirt",
+    "file": "male_casualsuit03_top.bin",
+    "lo": "male_casualsuit03_top_lo.bin",
+    "src": "male_casualsuit03"
+   },
+   {
+    "label": "Long sleeve",
+    "file": "male_casualsuit02_top.bin",
+    "lo": "male_casualsuit02_top_lo.bin",
+    "src": "male_casualsuit02"
+   },
+   {
+    "label": "Jacket",
+    "file": "male_casualsuit05_top.bin",
+    "lo": "male_casualsuit05_top_lo.bin",
+    "src": "male_casualsuit05"
+   },
+   {
+    "label": "White tee",
+    "file": "male_casualsuit06_top.bin",
+    "lo": "male_casualsuit06_top_lo.bin",
+    "src": "male_casualsuit06"
+   },
+   {
+    "label": "Suit",
+    "file": "male_elegantsuit01_top.bin",
+    "lo": "male_elegantsuit01_top_lo.bin",
+    "src": "male_elegantsuit01"
+   },
+   {
+    "label": "Work tee",
+    "file": "male_worksuit01_top.bin",
+    "lo": "male_worksuit01_top_lo.bin",
+    "src": "male_worksuit01"
+   }
+  ],
+  "bot": [
+   {
+    "label": "Jeans",
+    "file": "male_casualsuit04_bot.bin",
+    "lo": "male_casualsuit04_bot_lo.bin",
+    "src": "male_casualsuit04"
+   },
+   {
+    "label": "Light jeans",
+    "file": "male_casualsuit06_bot.bin",
+    "lo": "male_casualsuit06_bot_lo.bin",
+    "src": "male_casualsuit06"
+   },
+   {
+    "label": "Suit trousers",
+    "file": "male_elegantsuit01_bot.bin",
+    "lo": "male_elegantsuit01_bot_lo.bin",
+    "src": "male_elegantsuit01"
+   },
+   {
+    "label": "Overalls",
+    "file": "male_worksuit01_bot.bin",
+    "lo": "male_worksuit01_bot_lo.bin",
+    "src": "male_worksuit01"
+   }
+  ],
+  "shoe": [
+   {
+    "label": "Brown leather",
+    "file": "shoes01.bin",
+    "lo": "shoes01_lo.bin"
+   },
+   {
+    "label": "White sneakers",
+    "file": "shoes05.bin",
+    "lo": "shoes05_lo.bin"
+   },
+   {
+    "label": "Blue sneakers",
+    "file": "shoes06.bin",
+    "lo": "shoes06_lo.bin"
+   },
+   {
+    "label": "Black formal",
+    "file": "shoes04.bin",
+    "lo": "shoes04_lo.bin"
+   },
+   {
+    "label": "Boots",
+    "file": "shoes03.bin",
+    "lo": "shoes03_lo.bin"
+   },
+   {
+    "label": "Worn sneakers",
+    "file": "shoes02.bin",
+    "lo": "shoes02_lo.bin"
+   }
+  ],
+  "brow": "brow_m.bin",
+  "lash": "lash_m.bin",
+  "core": "core_m.bin",
+  "body": "body_m.bin",
+  "lod": "lod_m.bin",
+  "skin": "skin_m"
+ }
+}

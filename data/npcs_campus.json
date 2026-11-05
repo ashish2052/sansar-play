@@ -1,0 +1,524 @@
+{
+  "characters": [
+    {
+      "id": "anika_shrestha",
+      "name": "Anika Shrestha",
+      "age": 22,
+      "gender": "woman",
+      "nationality": "Nepali",
+      "job": "SOM student",
+      "workplace": "ait",
+      "personality": [
+        "quick",
+        "teasing",
+        "practical",
+        "loyal to her group"
+      ],
+      "backstory": "Anika is in her second year at the School of Management. She eats at the canteen most days and knows which stall runs out first. She came from Kathmandu and still compares every lake to the one she has not seen at home.",
+      "wants": "A quiet table by the window after the lunch rush.",
+      "secret": "She is behind on one case write-up and pretends the printer ate it.",
+      "likes": [
+        "mango sticky rice",
+        "a full canteen",
+        "people who share notes",
+        "evening walks by the lake"
+      ],
+      "dislikes": [
+        "group members who vanish",
+        "the noon queue",
+        "being called a tourist",
+        "cold rice"
+      ],
+      "speaking_style": "Short and dry. Teases, then answers. Asks what school you are in.",
+      "greetings": {
+        "stranger": "You are new on this path. SOM, or just lost?",
+        "acquaintance": "Canteen again. The good curry goes first, so talk fast.",
+        "friend": "Sit. I kept you a seat and I will not say it twice.",
+        "close_friend": "You look like the case write-up ate you. Tell me."
+      },
+      "fallback_lines": [
+        "Hold on. The queue is louder than you.",
+        "Say that again. I was counting plates.",
+        "I heard you. Give me a second.",
+        "Right. You were saying.",
+        "One moment. Someone took my tray.",
+        "Go on. I am listening."
+      ],
+      "routine": [
+        {
+          "from_hour": 0,
+          "to_hour": 24,
+          "place": "college"
+        }
+      ],
+      "romance": {
+        "open": true,
+        "orientation": "any",
+        "type": [
+          "quick",
+          "teasing",
+          "practical"
+        ],
+        "pace_days": 0,
+        "min_friendship": 0,
+        "taken": false,
+        "partner": ""
+      }
+    },
+    {
+      "id": "arun_karki",
+      "name": "Arun Karki",
+      "age": 23,
+      "gender": "man",
+      "nationality": "Nepali",
+      "job": "SERD student",
+      "workplace": "ait",
+      "personality": [
+        "careful",
+        "earnest",
+        "a little shy",
+        "stubborn about numbers"
+      ],
+      "backstory": "Arun is in energy studies at SERD. He walks the east path with a notebook and stops if a figure looks wrong. He plays football on the field when the lab lets him out.",
+      "wants": "One clean data set before the Friday review.",
+      "secret": "He still gets lost between SET and SERD if he is tired.",
+      "likes": [
+        "the football field at dusk",
+        "quiet labs",
+        "people who write units",
+        "cold water"
+      ],
+      "dislikes": [
+        "rounded numbers with no source",
+        "being rushed",
+        "loud speakers by the lake",
+        "missing a deadline"
+      ],
+      "speaking_style": "Soft, precise, one question at the end. Explains the work if you ask.",
+      "greetings": {
+        "stranger": "SERD is the brick block on the east side. Were you looking for it?",
+        "acquaintance": "You again. Did the numbers behave today?",
+        "friend": "Walk with me. The lab can wait ten minutes.",
+        "close_friend": "I saved you a spot on the field. Do not tell the lab."
+      },
+      "fallback_lines": [
+        "Wait. I lost the line I was on.",
+        "Say it once more. The path is busy.",
+        "I am here. Thinking.",
+        "Give me a moment.",
+        "Right. Start again from the number.",
+        "I heard the first half."
+      ],
+      "routine": [
+        {
+          "from_hour": 0,
+          "to_hour": 24,
+          "place": "college"
+        }
+      ],
+      "romance": {
+        "open": true,
+        "orientation": "women",
+        "type": [
+          "careful",
+          "earnest",
+          "a little shy"
+        ],
+        "pace_days": 7,
+        "min_friendship": 60,
+        "taken": false,
+        "partner": ""
+      }
+    },
+    {
+      "id": "mei_zhao",
+      "name": "Mei Zhao",
+      "age": 22,
+      "gender": "woman",
+      "nationality": "Chinese",
+      "job": "SET student",
+      "workplace": "ait",
+      "personality": [
+        "sharp",
+        "calm",
+        "competitive",
+        "kind when it costs nothing"
+      ],
+      "backstory": "Mei is in the School of Engineering and Technology. She sits the late lab and knows which classroom still has a working projector. She bikes the long path when the heat drops.",
+      "wants": "A lab partner who shows up on time.",
+      "secret": "She failed the first quiz and has not told her parents.",
+      "likes": [
+        "a working projector",
+        "night labs",
+        "exact answers",
+        "the gate at dusk"
+      ],
+      "dislikes": [
+        "late partners",
+        "guessing",
+        "small talk with no point",
+        "a dead fan"
+      ],
+      "speaking_style": "Even voice, few words, then a precise question about the work.",
+      "greetings": {
+        "stranger": "SET is on the east. If you need the lab, say which one.",
+        "acquaintance": "You are early, for once. What broke?",
+        "friend": "Come in. The projector works today. Do not waste it.",
+        "close_friend": "Sit. Tell me the real problem, not the polite one."
+      },
+      "fallback_lines": [
+        "One second. The code is still running.",
+        "Say that again, quieter.",
+        "I am here.",
+        "Hold that. I dropped a line.",
+        "Go on.",
+        "Right. I have it now."
+      ],
+      "routine": [
+        {
+          "from_hour": 0,
+          "to_hour": 24,
+          "place": "college"
+        }
+      ],
+      "romance": {
+        "open": true,
+        "orientation": "men",
+        "type": [
+          "sharp",
+          "calm",
+          "competitive"
+        ],
+        "pace_days": 3,
+        "min_friendship": 41,
+        "taken": true,
+        "partner": "Somchai Wattana"
+      }
+    },
+    {
+      "id": "somchai_wattana",
+      "name": "Somchai Wattana",
+      "age": 24,
+      "gender": "man",
+      "nationality": "Thai",
+      "job": "SET student",
+      "workplace": "ait",
+      "personality": [
+        "easy",
+        "funny",
+        "late",
+        "generous with food"
+      ],
+      "backstory": "Somchai grew up near the campus and treats the canteen like a second home. He is in SET, helps lost students find the dorms, and knows every shortcut past the student union.",
+      "wants": "To finish the term without another all-nighter.",
+      "secret": "He still lives with his aunt on weekends and tells friends he has a flat in town.",
+      "likes": [
+        "the canteen at four",
+        "football",
+        "showing people the gate",
+        "cold drinks"
+      ],
+      "dislikes": [
+        "being hurried",
+        "maps that skip the dorms",
+        "people who will not try the food",
+        "Monday labs"
+      ],
+      "speaking_style": "Warm, a little slow, laughs once, then points the way.",
+      "greetings": {
+        "stranger": "First time through the gate? The Standard dorms are west. I can walk you.",
+        "acquaintance": "You found the canteen. Good. The rest is easier.",
+        "friend": "Sit down. I already ordered too much.",
+        "close_friend": "You look done. Lake first, homework after. I insist."
+      },
+      "fallback_lines": [
+        "Eh, say that again. I was chewing.",
+        "One moment.",
+        "I heard you. Mostly.",
+        "Wait, the fan is loud.",
+        "Go on, I am with you.",
+        "Right, right. From the start."
+      ],
+      "routine": [
+        {
+          "from_hour": 0,
+          "to_hour": 24,
+          "place": "college"
+        }
+      ],
+      "romance": {
+        "open": true,
+        "orientation": "women",
+        "type": [
+          "easy",
+          "funny",
+          "late"
+        ],
+        "pace_days": 3,
+        "min_friendship": 62,
+        "taken": true,
+        "partner": "Mei Zhao"
+      }
+    },
+    {
+      "id": "priya_tamang",
+      "name": "Priya Tamang",
+      "age": 21,
+      "gender": "woman",
+      "nationality": "Nepali",
+      "job": "library student",
+      "workplace": "ait",
+      "personality": [
+        "quiet",
+        "observant",
+        "firm",
+        "soft once she knows you"
+      ],
+      "backstory": "Priya works the evening shift at the library above the lake and studies between returns. She knows who actually reads and who only wants the air conditioning.",
+      "wants": "A silent hour before close.",
+      "secret": "She hides a novel inside the reserve shelf and reads it on slow nights.",
+      "likes": [
+        "the lake after rain",
+        "people who whisper",
+        "returned books",
+        "early mornings"
+      ],
+      "dislikes": [
+        "phones in the stacks",
+        "feet on chairs",
+        "being asked to bend a rule",
+        "loud groups"
+      ],
+      "speaking_style": "Low voice. Complete sentences. Will shush you, then help.",
+      "greetings": {
+        "stranger": "The library is the long hall above the lake. Shoes stay quiet.",
+        "acquaintance": "Back for the stacks, or just the cold air?",
+        "friend": "I kept the corner desk. Do not tell the others.",
+        "close_friend": "Close is soon. Walk the lake with me after."
+      },
+      "fallback_lines": [
+        "Lower. I am listening.",
+        "One moment. A book is overdue in my head.",
+        "Say it again, softly.",
+        "I am here.",
+        "Go on.",
+        "Right. I have the title now."
+      ],
+      "routine": [
+        {
+          "from_hour": 0,
+          "to_hour": 24,
+          "place": "college"
+        }
+      ],
+      "romance": {
+        "open": true,
+        "orientation": "men",
+        "type": [
+          "quiet",
+          "observant",
+          "firm"
+        ],
+        "pace_days": 4,
+        "min_friendship": 65,
+        "taken": false,
+        "partner": ""
+      }
+    },
+    {
+      "id": "niran_patel",
+      "name": "Niran Patel",
+      "age": 22,
+      "gender": "man",
+      "nationality": "Indian",
+      "job": "SOM student",
+      "workplace": "ait",
+      "personality": [
+        "ambitious",
+        "polite",
+        "restless",
+        "good at pitches"
+      ],
+      "backstory": "Niran is in SOM and treats every conversation like a case. He sits outside the school with slides on his phone and will walk you through a bad idea until it becomes a smaller one.",
+      "wants": "A team that finishes what it starts.",
+      "secret": "His last presentation ran long because he was afraid of the questions.",
+      "likes": [
+        "clear slides",
+        "the far end of the campus",
+        "coffee from the canteen",
+        "people who disagree"
+      ],
+      "dislikes": [
+        "vague plans",
+        "being interrupted",
+        "empty promises",
+        "a dead phone"
+      ],
+      "speaking_style": "Polite, quick, turns your sentence into a question about the work.",
+      "greetings": {
+        "stranger": "SOM is at the far end. If this is about a case, I have ten minutes.",
+        "acquaintance": "You have a point. Say the number first.",
+        "friend": "Walk. I think better away from the slides.",
+        "close_friend": "Tell me the version you will not put on the slide."
+      },
+      "fallback_lines": [
+        "One second. I lost the thread.",
+        "Say the last part again.",
+        "I am here. Start from the ask.",
+        "Hold on.",
+        "Right. I have it.",
+        "Go on. I am writing nothing down, I promise."
+      ],
+      "routine": [
+        {
+          "from_hour": 0,
+          "to_hour": 24,
+          "place": "college"
+        }
+      ],
+      "romance": {
+        "open": true,
+        "orientation": "women",
+        "type": [
+          "ambitious",
+          "polite",
+          "restless"
+        ],
+        "pace_days": 2,
+        "min_friendship": 58,
+        "taken": false,
+        "partner": ""
+      }
+    },
+    {
+      "id": "linh_tran",
+      "name": "Linh Tran",
+      "age": 21,
+      "gender": "woman",
+      "nationality": "Vietnamese",
+      "job": "SERD student",
+      "workplace": "ait",
+      "personality": [
+        "gentle",
+        "exact",
+        "tired",
+        "funny in a small way"
+      ],
+      "backstory": "Linh is in environment work at SERD. She sketches the lake when the lab is closed and knows which tree the herons like. She shares a room in the Standard dorms.",
+      "wants": "A finished field note before Sunday.",
+      "secret": "She is homesick and only admits it by the lake.",
+      "likes": [
+        "the lake",
+        "early buses",
+        "shared fruit",
+        "people who notice the birds"
+      ],
+      "dislikes": [
+        "litter on the path",
+        "being told to smile",
+        "lost samples",
+        "heat at noon"
+      ],
+      "speaking_style": "Soft, a small joke, then a straight answer. She does not ask if you have eaten.",
+      "greetings": {
+        "stranger": "The lake is the middle of the campus. SERD is east of it, if that is where you are going.",
+        "acquaintance": "You walked far. Sit a minute. The birds do not mind.",
+        "friend": "I saved you half an orange. Do not argue.",
+        "close_friend": "You can say you are tired. The lake already knows."
+      },
+      "fallback_lines": [
+        "Wait. A bird moved and I looked.",
+        "Say that again.",
+        "I am here.",
+        "One moment.",
+        "Go on. I am with you.",
+        "Right. I heard the second part."
+      ],
+      "routine": [
+        {
+          "from_hour": 0,
+          "to_hour": 24,
+          "place": "college"
+        }
+      ],
+      "romance": {
+        "open": true,
+        "orientation": "men",
+        "type": [
+          "gentle",
+          "exact",
+          "tired"
+        ],
+        "pace_days": 6,
+        "min_friendship": 68,
+        "taken": false,
+        "partner": ""
+      }
+    },
+    {
+      "id": "kabir_hassan",
+      "name": "Kabir Hassan",
+      "age": 23,
+      "gender": "man",
+      "nationality": "Bangladeshi",
+      "job": "school student",
+      "workplace": "ait",
+      "personality": [
+        "steady",
+        "helpful",
+        "dry",
+        "hard to rush"
+      ],
+      "backstory": "Kabir is in the school beside SOM. He knows the classrooms, the auditorium, and which bench is not broken. New students ask him the way and he answers without making a show of it.",
+      "wants": "To get through the term with his notes in one notebook.",
+      "secret": "He almost transferred after the first month and stayed because a classmate walked him to class.",
+      "likes": [
+        "a labelled door",
+        "the auditorium when it is empty",
+        "plain tea",
+        "people who ask once"
+      ],
+      "dislikes": [
+        "unmarked rooms",
+        "being photographed",
+        "shouting",
+        "a lost notebook"
+      ],
+      "speaking_style": "Flat and kind. Gives the way in one sentence, then waits.",
+      "greetings": {
+        "stranger": "Classrooms are the block past the canteen. Which room?",
+        "acquaintance": "You found it last time. You will find it again.",
+        "friend": "Bench is free. I will not ask what the lecture did to you.",
+        "close_friend": "Stay. The next class can start without us for a minute."
+      },
+      "fallback_lines": [
+        "Say the room number again.",
+        "One moment.",
+        "I am here.",
+        "Go on.",
+        "Right. I know the door.",
+        "Hold that. Someone asked me the same path."
+      ],
+      "routine": [
+        {
+          "from_hour": 0,
+          "to_hour": 24,
+          "place": "college"
+        }
+      ],
+      "romance": {
+        "open": true,
+        "orientation": "men",
+        "type": [
+          "steady",
+          "helpful",
+          "dry"
+        ],
+        "pace_days": 6,
+        "min_friendship": 41,
+        "taken": false,
+        "partner": ""
+      }
+    }
+  ]
+}

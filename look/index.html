@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sansar - pick the look</title>
+<meta name="theme-color" content="#151311">
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(1200px 600px at 50% -10%,#3a2e22,#151311 60%);color:#f4ecdf;font-family:system-ui,"Segoe UI",Roboto,sans-serif}
+main{max-width:1180px;margin:0 auto;padding:clamp(28px,6vw,64px) 20px 48px}
+h1{font:600 clamp(2rem,5vw,3.2rem) Georgia,serif;margin:0 0 10px;letter-spacing:.01em}
+p.lead{margin:0 0 36px;opacity:.75;max-width:640px;line-height:1.55}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:rgba(233,194,122,.5)}
+.shot{aspect-ratio:16/10;background:#2a241d center/cover no-repeat}
+.body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tag{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:#e9c27a;font-weight:700}
+h2{margin:0;font:600 1.35rem Georgia,serif}
+.body p{margin:0;opacity:.72;line-height:1.5;font-size:.95rem;flex:1}
+a.go{margin-top:10px;display:inline-block;text-align:center;background:#e9c27a;color:#1e1710;text-decoration:none;font-weight:700;padding:13px 18px;border-radius:999px}
+a.go:active{transform:scale(.97)}
+</style>
+</head><body><main>
+<h1>Pick the look of Sansar</h1>
+<p class="lead">The same street, built three ways. Walk each one on your phone or laptop, then choose the style the whole world will be built in.</p>
+<div class="grid">
+  <div class="card"><div class="shot" style="background-image:url(/look/assets/shots/a.jpg)"></div><div class="body">
+    <span class="tag">Style A</span><h2>Realistic</h2>
+    <p>Photo-scanned street furniture, real brick and plaster, a photographed sky that lights the whole scene, soft shadows and ambient occlusion.</p>
+    <a class="go" href="/look/a">Walk this street</a></div></div>
+  <div class="card"><div class="shot" style="background-image:url(/look/assets/shots/b.jpg)"></div><div class="body">
+    <span class="tag">Style B</span><h2>Stylised-realistic</h2>
+    <p>Real proportions and real objects with simplified colour, a warm late-afternoon sun and painted trees. Softer, friendlier, lighter on phones.</p>
+    <a class="go" href="/look/b">Walk this street</a></div></div>
+  <div class="card"><div class="shot" style="background-image:url(/look/assets/shots/c.jpg)"></div><div class="body">
+    <span class="tag">Style C</span><h2>Clean low-poly</h2>
+    <p>Flat-shaded and bright, every object built from simple shapes. Fastest to load and to extend; a polished version of the first build.</p>
+    <a class="go" href="/look/c">Walk this street</a></div></div>
+</div>
+</main></body></html>

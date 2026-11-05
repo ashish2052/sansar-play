@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Sansar - look test</title>
+<meta name="theme-color" content="#151311">
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;overflow:hidden;background:#151311;font-family:system-ui,"Segoe UI",Roboto,sans-serif;color:#f4ecdf;touch-action:none;user-select:none}
+[hidden]{display:none!important}
+canvas#gl{position:fixed;inset:0;width:100%;height:100%;display:block;cursor:grab}
+canvas#gl:active{cursor:grabbing}
+.chip{position:fixed;background:rgba(20,18,16,.55);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:8px 14px;font-size:.85rem;font-weight:600}
+#back{left:max(12px,env(safe-area-inset-left));top:max(12px,env(safe-area-inset-top));color:inherit;text-decoration:none}
+#fps{right:max(12px,env(safe-area-inset-right));top:max(12px,env(safe-area-inset-top));font-variant-numeric:tabular-nums;font-size:.75rem;opacity:.85}
+#hint{left:50%;bottom:max(18px,env(safe-area-inset-bottom));transform:translateX(-50%);white-space:nowrap;transition:opacity 1s;font-weight:500;opacity:.9}
+#joy{position:fixed;width:110px;height:110px;border-radius:50%;border:2px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);transform:translate(-50%,-50%);pointer-events:none}
+#knob{position:absolute;left:50%;top:50%;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.7);transform:translate(-50%,-50%)}
+#load{position:fixed;inset:0;background:#151311;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;transition:opacity .8s;z-index:5}
+#load.done{opacity:0;pointer-events:none}
+#load h1{margin:0;font:600 1.6rem Georgia,serif;letter-spacing:.04em}
+#bar{width:min(320px,70vw);height:3px;background:rgba(255,255,255,.12);border-radius:3px;overflow:hidden}
+#barfill{height:100%;width:0;background:#e9c27a;transition:width .3s}
+#loadmsg{font-size:.85rem;opacity:.6}
+</style>
+</head><body>
+<canvas id="gl"></canvas>
+<a id="back" class="chip" href="/look">&larr; <span id="sname">Styles</span></a>
+<div id="fps" class="chip">-- fps</div>
+<div id="hint" class="chip"></div>
+<div id="joy" hidden><div id="knob"></div></div>
+<div id="load"><h1>Sansar</h1><div id="bar"><div id="barfill"></div></div><div id="loadmsg">Building the street</div></div>
+<script>
+  const s = (location.pathname.match(/\/look\/([abc])/) || [])[1] || new URLSearchParams(location.search).get('s') || 'a';
+  document.getElementById('sname').textContent = { a: 'A · Realistic', b: 'B · Stylised-realistic', c: 'C · Clean low-poly' }[s];
+  const touch = matchMedia('(pointer: coarse)').matches, hint = document.getElementById('hint');
+  hint.textContent = touch ? 'Left thumb to walk · drag right side to look' : 'WASD to walk · Shift to run · drag to look';
+  setTimeout(() => hint.style.opacity = 0, 7000);
+</script>
+<script type="importmap">{"imports":{"three":"/vendor/three.module.min.js","three/addons/":"/look/vendor/addons/"}}</script>
+<script type="module" src="/look/street.js"></script>
+</body></html>

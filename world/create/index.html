@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-sansar="static"><head><meta charset="utf-8">
+<script src="../../js/offline.js"></script>
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Sansar - create your person</title>
+<meta name="theme-color" content="#2b1a12">
+<style>
+:root{--ink:#2a1a10;--card:#33201a;--cream:#fff4dc;--gold:#f2b630;--line:rgba(255,230,180,.16)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;overflow:hidden;background:#241510;font-family:system-ui,"Segoe UI",Roboto,sans-serif;color:var(--cream);user-select:none;touch-action:none}
+[hidden]{display:none!important}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer;border:0}
+#stage{position:fixed;left:0;top:0;right:0;height:38%;background:radial-gradient(120% 90% at 50% 38%,#6a4a36 0,#3a2519 55%,#1d110c 100%)}
+#gl{width:100%;height:100%;display:block;touch-action:none;cursor:grab}
+#hint{position:absolute;left:0;right:0;bottom:8px;text-align:center;font-size:.72rem;opacity:.55;pointer-events:none}
+#views{position:absolute;right:max(10px,env(safe-area-inset-right));top:max(10px,env(safe-area-inset-top));display:flex;gap:6px}
+#views button{height:36px;padding:0 12px;border-radius:999px;background:rgba(0,0,0,.4);border:1px solid var(--line);font-weight:700}
+#back{position:absolute;left:max(10px,env(safe-area-inset-left));top:max(10px,env(safe-area-inset-top));padding:8px 12px;border-radius:999px;background:rgba(0,0,0,.35);color:var(--cream);text-decoration:none;font-size:.85rem;min-height:36px;display:flex;align-items:center}
+#sheet{position:fixed;left:0;right:0;bottom:0;top:38%;background:var(--card);border-radius:20px 20px 0 0;display:flex;flex-direction:column;box-shadow:0 -10px 30px rgba(0,0,0,.45);padding-bottom:env(safe-area-inset-bottom)}
+#top{display:flex;gap:8px;padding:10px 12px 4px}
+#nm{flex:1;min-width:0;height:44px;border-radius:12px;border:1px solid var(--line);background:rgba(0,0,0,.25);padding:0 12px;outline:0;user-select:text}
+#nm:focus{border-color:var(--gold)}
+.btn{height:44px;min-width:44px;padding:0 14px;border-radius:12px;background:rgba(255,255,255,.09);border:1px solid var(--line);font-weight:700;white-space:nowrap}
+.btn:active{transform:scale(.96)}
+#slots{display:flex;gap:6px;padding:0 12px 4px}
+.slot{flex:1;height:36px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid var(--line);font-size:.78rem;font-weight:700}
+.slot.on{background:var(--gold);color:#3a2216;border-color:var(--gold)}
+#tabs{display:flex;gap:4px;overflow-x:auto;padding:4px 12px 8px;scrollbar-width:none;touch-action:pan-x}
+#tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;height:42px;padding:0 11px;font-size:.84rem;border-radius:999px;background:transparent;border:1px solid var(--line);font-weight:700;opacity:.8}
+.tab.on{background:var(--gold);color:#3a2216;opacity:1;border-color:var(--gold)}
+#panel{flex:1;overflow-y:auto;padding:4px 12px 12px;touch-action:pan-y;-webkit-overflow-scrolling:touch}
+h4{margin:10px 0 6px;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;opacity:.7;font-weight:700}
+h4:first-child{margin-top:2px}
+.tiles{display:flex;flex-wrap:wrap;gap:8px}
+.tile{width:76px;min-height:84px;padding:6px 4px;border-radius:12px;background:rgba(255,255,255,.07);border:2px solid transparent;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px}
+.tile.on{border-color:var(--gold);background:rgba(242,182,48,.16)}
+.tile svg{width:42px;height:42px;display:block}
+.tile small{font-size:.62rem;font-weight:700;text-align:center;line-height:1.15;max-width:72px}
+.dot{width:42px;height:42px;border-radius:50%;display:block;border:2px solid rgba(255,255,255,.25)}
+#foot{padding:8px 12px 12px}
+#save{width:100%;height:52px;border-radius:999px;background:linear-gradient(#f7c94b,#e19a1f);color:#3a2216;font-weight:800;font-size:1.05rem;border:1px solid #fff3c4}
+#save[disabled]{opacity:.5}
+#load{position:fixed;inset:0;display:grid;place-items:center;background:#241510;z-index:5;transition:opacity .5s}
+@media (min-width:900px){
+ #stage{right:460px;height:auto;bottom:0}
+ #sheet{left:auto;top:0;width:460px;border-radius:0;box-shadow:-10px 0 30px rgba(0,0,0,.4)}
+ #hint{bottom:14px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head>
+<body>
+<div id="load">Loading your person...</div>
+<div id="stage"><canvas id="gl"></canvas><a id="back" href="../../" hidden>&#8592; Back to town</a><div id="views"><button type="button" id="front">Front</button><button type="button" id="side">Side</button></div><div id="hint">Drag to turn</div></div>
+<div id="sheet">
+  <div id="top"><input id="nm" maxlength="14" placeholder="Your name" autocomplete="off"><button class="btn" id="rnd" type="button">Randomise</button></div>
+  <div id="slots"></div>
+  <div id="tabs"></div>
+  <div id="panel"></div>
+  <div id="foot"><button id="save" type="button">Save and enter Sansar</button></div>
+</div>
+<script>window.onerror=function(m,s,l,c,e){try{fetch('/api/err',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({kind:'error',msg:String(m).slice(0,400),stack:String(e&&e.stack||'').slice(0,800),sheet:'creator',hash:''})})}catch(x){}};addEventListener('unhandledrejection',function(e){var r=e.reason;try{fetch('/api/err',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({kind:'rejection',msg:String(r&&r.message||r).slice(0,400),stack:String(r&&r.stack||'').slice(0,800),sheet:'creator',hash:''})})}catch(x){}});</script>
+<script type="importmap">{"imports":{"three":"../../vendor/three.module.min.js","three/addons/":"../../look/vendor/addons/"}}</script>
+<script type="module" src="../../dist/creator-UNDFUXVS.js"></script>
+</body></html>
